@@ -46,12 +46,12 @@ type Semester = 'I YEAR I SEM' | 'I YEAR II SEM' | 'II YEAR III SEM' | 'II YEAR 
   ],
 
   'II YEAR IV SEM': [
-    ['1', 'U21PCN01CS', 'Object Oriented Programming using Java', 'July-2026', 'D', '3', 'Pass'],
-    ['2', 'U21BSN03MT', 'Engineering Mathematics-III', 'July-2026', 'C', '3', 'Pass'],
+    ['1', 'U21PCN01CS', 'Object Oriented Programming using Java', 'July-2026', 'B', '3', 'Pass'],
+    ['2', 'U21BSN03MT', 'Engineering Mathematics-III', 'July-2026', 'A', '3', 'Pass'],
     ['3', 'U21PCA01CS', 'Design and Analysis of Algorithms', 'July-2026', 'C', '3', 'Pass'],
-    ['4', 'U21PCN02CS', 'Software Engineering', 'July-2026', 'C', '3', 'Pass'],
+    ['4', 'U21PCN02CS', 'Software Engineering', 'July-2026', 'B', '3', 'Pass'],
     ['5', 'U21PCN03CS', 'Computer Organization', 'July-2026', 'B', '3', 'Pass'],
-    ['6', 'U21PCA81CS', 'Object Oriented Programming using Java Lab', 'July-2026', 'D', '2', 'Pass'],
+    ['6', 'U21PCA81CS', 'Object Oriented Programming using Java Lab', 'July-2026', 'C', '2', 'Pass'],
     ['7', 'U21PCNB1CS', 'Design and Analysis of Algorithms Lab', 'July-2026', 'A', '1', 'Pass'],
     ['8', 'U21PCNB2CS', 'Software Engineering Lab', 'July-2026', 'A', '1', 'Pass'],
   ],
@@ -77,7 +77,7 @@ const semesterResults: Record<Semester, {
     result: 'Promoted',
   },
   'II YEAR IV SEM': {
-    sgpa: '8.11',
+    sgpa: '8.03',
     cgpa: '8.15',
     result: 'Promoted',
   },
