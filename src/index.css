@@ -35,8 +35,16 @@ a { color: #0000ee; font-weight: 600; text-decoration: none; }
 .topbar { position: fixed; z-index: 10; top: 0; left: 0; right: 0; height: 67px; background: #ffd344; display: flex; align-items: center; padding-left: 20px; }
 .brand { height: 67px; width: 440px; background: #ffd344; display: flex; align-items: center; gap: 11px; font-size: 20px; white-space: nowrap; }
 .brand .college-mark { width: 35px; height: 35px; background-color: white; }
-.mobile-menu { display: none; background: none; border: 0; }
-.header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; padding-right: 37px; }
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 4px;
+  color: inherit;
+}.header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; padding-right: 37px; }
 .search { width: 295px; height: 44px; border-bottom: 2px solid #7a8ca3; display: flex; align-items: center; justify-content: space-between; color: #5e6e87; font-size: 17px; }
 .circle { width: 37px; height: 37px; border: 0; border-radius: 50%; background: #f7f7f7; color: #5a5a5a; display: grid; place-items: center; }
 .avatar { width: 37px; height: 37px; border-radius: 50%; object-fit: cover; }
@@ -54,8 +62,13 @@ nav { padding-top: 7px; }
 .nav-item { width: 100%; height: 52px; padding: 0 26px; border: 0; border-left: 3px solid transparent; background: none; color: white; display: flex; align-items: center; gap: 19px; font-size: 17px; text-align: left; }
 .nav-item.active { background: #0b4a83; border-left-color: #ffd344; border-radius: 0 28px 28px 0; color: #ffd344; }
 .nav-item .nav-arrow { margin-left: auto; }
-.main-content { padding: 83px 27px 58px 27px; min-height: calc(100vh - 34px); }
-.breadcrumb { height: 36px; background: white; box-shadow: 0 1px 5px #0002; border-radius: 3px; display: flex; align-items: center; gap: 8px; padding: 0 15px; color: #092f5e; font-size: 17px; }
+.sidebar:not(.expanded) .nav-item {
+  display: none;
+}
+.main-content {
+  padding: 83px 27px 58px 27px;
+  min-height: calc(100vh - 34px);
+}.breadcrumb { height: 36px; background: white; box-shadow: 0 1px 5px #0002; border-radius: 3px; display: flex; align-items: center; gap: 8px; padding: 0 15px; color: #092f5e; font-size: 17px; }
 .grid-icon { margin-left: auto; color: #111; }
 .dashboard-grid { display: grid; grid-template-columns: 337px minmax(300px, 1fr) 403px; gap: 10px; margin: 15px 3px 0; }
 .profile-card, .dashboard-panel { background: white; box-shadow: 0 1px 4px #0004; }
